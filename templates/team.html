@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>All Products - Redstore</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <!--added a cdn link by searching font awesome4 cdn and getting this link from https://www.bootstrapcdn.com/fontawesome/ this url*/-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+
+        <!--<div class ="header">-->
+        <div class="container">
+            <div class ="header">
+             <!-- Load an icon library -->
+             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+             <div class="navbar">
+                 <a class="active" href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+                 <a href="products.html"><i class="fa fa-group"></i> Team</a>
+                </div>
+            </div>
+        </div>
+        <!--</div>-->
+
+            <!--<h2 class="title" >Featured Products</h2>-->
+            <div class="row">
+                    <div class="col-4">
+                        <a href="products-details.html"><img src="images/Ovel.jpg"></a>
+                        <h4>Ovel Maramis</h4>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/Vito.jpg">
+                        <h4>Vito Korengkeng</h4>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/Bryan.jpg">
+                        <h4>Bryan Amping</h4>
+                    </div>  
+                    <div class="col-4">
+                       <img src="images/Alden.jpg">
+                        <h4>Alden Muaja</h4>
+                    </div> 
+                    <div class="col-4">
+                        <img src="images/Kiki.jpg">
+                        <h4>Alden Muaja</h4>
+                    </div> 
+                </div>
+   
+        
+        
+        <!-----------------------------------js for toggle menu----------------------------------------------->
+        <script>
+            var menuItems=document.getElementById("MenuItems");
+            
+            MenuItems.style.maxHeight="0px";
+            function menutoggle(){
+                if(MenuItems.style.maxHeight == "0px"){
+                    MenuItems.style.maxHeight="200px";
+                }
+                else{
+                    MenuItems.style.maxHeight="0px";
+                }
+            }
+        </script>
+    </body>
+</html>

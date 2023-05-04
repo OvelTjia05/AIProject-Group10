@@ -1,38 +1,65 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>Redstore | Ecommerce website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <!--added a cdn link by searching font awesome4 cdn and getting this link from https://www.bootstrapcdn.com/fontawesome/ this url*/-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Image Classification</title>
   </head>
   <link rel="stylesheet" type="text/css" href="style.css">
   <body>
     <div class="row">
-      <div class="col-2">
-        <h1>Image Classification Shoes Nike</h1> 
-          <div class = "row">
-              <form method="POST" enctype="multipart/form-data" action="/">
-              <input type="file" name="file" accept="image/*" required />
-              <input type="submit" value="Upload" />
-            </form>
-        <div class="col-2">
-          <img src="/templates/images/nike.jpg">
-        </div>
-      </div>
-    </div>
-  </div>
-        <div class="categories">
-          <div class="small-container">
-              <div class="row">
-              <div class="col-3">
-                  <img src="/templates/images/1.jpg">
+      
+            <div class ="header">
+              <!-- Load an icon library -->
+              <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+              <div class="navbar">
+ 
+                  <a class="active" href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+                  <a href="team.html"><i class="fa fa-group"></i> Team</a>
               </div>
-              <div class="col-3">
-                  <img src="/templates/images/2.jpg">
+             <!-- Clasication-->
+             <div class="row">
+                 <div class="col-2">
+                     <h1>Image Classification</h1>
+                     <div class = "row">
+                         <form method="POST" enctype="multipart/form-data" action="/">
+                         <input type="file" name="file" accept="image/*" required />
+                         <input type="submit" value="Upload" />
+                       </form>
+                 <div class="col-2">
+                     <img src="images/nike.jpg">
+                 </div>
               </div>
-              <div class="col-3">
-                  <img src="/templates/images/3.jpg">
-              </div>
-          </div>
-          </div>
-      </div>
+            </div>
+         </div>
+     </div>
+ 
+         <!------------------------------ featured categories------------------------------>
+         <div class="categories">
+             <div class="small-container">
+                 <div class="row">
+                 <div class="col-3">
+                     <img src="images/category-1.jpg">
+                 </div>
+                 <div class="col-3">
+                     <img src="images/category-2.jpg">
+                 </div>
+                 <div class="col-3">
+                     <img src="images/category-3.jpg">
+                 </div>
+             </div>
+             </div>
+         </div>
+        
+     </div>
+         
+         
   </body>
 </html>
