@@ -1,18 +1,20 @@
 import tensorflow as tf
-from keras.models import load_model;
+from keras.models import load_model
 # from keras.preprocessing import image;
-from PIL import Image;
-from flask import Flask, render_template, request;
-import numpy as np;
+from PIL import Image
+from flask import Flask, render_template, request
+import numpy as np
 
 # Inisialisasi Flask app
 app = Flask(__name__)
 
 # Memuat model dari file .h5
 model = load_model('model_09-0.84.h5')
-class_names = ['adidas', 'converse', 'nike' ]
+class_names = ['adidas', 'converse', 'nike']
 
 # Fungsi untuk memproses gambar
+
+
 def process_image(image_path):
     img = Image.open(image_path)
     img = img.resize((300, 300))
@@ -21,6 +23,8 @@ def process_image(image_path):
     return img
 
 # Route utama untuk upload gambar
+
+
 @app.route('/', methods=['GET', 'POST'])
 def upload_file():
     if request.method == 'POST':
@@ -45,6 +49,12 @@ def upload_file():
         return render_template('result.html', label=predicted_label, accuracy=accuracy_formatted, image_file=file_path)
 
     return render_template('index.html')
+
+
+@app.route('/team')
+def team():
+    return render_template('team.html')
+
 
 if __name__ == '__main__':
     app.run(debug=True)

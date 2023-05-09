@@ -3,11 +3,20 @@
   <head>
     <title>Result</title>
   </head>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <body>
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="{{ url_for('static', filename='css/style.css') }}"
+  />
+  <body class="result">
     <h1>Result</h1>
     <h2>Predicted Label: {{ label }}</h2>
     <h3>Accuracy: {{ accuracy }}%</h3>
-    <img src="{{ image_file }}" alt="Uploaded Image" width="300px" />
+    <img
+      src="{{ image_file }}"
+      alt="Uploaded Image"
+      width="300px"
+      height="300px"
+    />
   </body>
 </html>
