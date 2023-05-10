@@ -62,17 +62,34 @@ p {
 .btn {
   background-color: #fff; /* Warna latar belakang tombol */
   color: #ae00ff; /* Warna teks tombol */
-  padding: 10px 20px; /* Ukuran padding pada tombol */
+
+  /* width: ; */
+  /* padding: 10px 20px; */
   border: none; /* Menghapus border pada tombol */
   border-radius: 4px; /* Membuat tombol menjadi lebih berbentuk */
   cursor: pointer; /* Mengubah kursor saat diarahkan ke tombol */
-  font-size: 16px; /* Ukuran teks tombol */
+  font-size: 24px; /* Ukuran teks tombol */
   font-weight: bold; /* Menambahkan ketebalan pada teks tombol */
   transition: background-color 0.3s ease; /* Menambahkan efek transisi pada saat tombol dihover */
   margin-right: 10px; /* Jarak antara kedua tombol */
 }
 
-.btn:hover {
+.btn1 {
+  padding: 7px 20px;
+  background-color: #fff; /* Warna latar belakang tombol */
+  color: #ae00ff; /* Warna teks tombol */
+
+  /* width: ; */
+  /* padding: 10px 20px; */
+  border: none; /* Menghapus border pada tombol */
+  border-radius: 4px; /* Membuat tombol menjadi lebih berbentuk */
+  cursor: pointer; /* Mengubah kursor saat diarahkan ke tombol */
+  font-size: 20px; /* Ukuran teks tombol */
+  font-weight: bold; /* Menambahkan ketebalan pada teks tombol */
+  transition: background-color 0.3s ease;
+}
+
+.btn1:hover {
   background-color: #ae00ff; /* Warna latar belakang tombol saat dihover */
   color: #fff;
 }
@@ -187,7 +204,8 @@ h4 {
 
 /* Style the navigation bar */
 .navbar {
-  width: 100%;
+  margin: auto;
+  width: 80%;
   background-color: #700092;
   overflow: auto;
 }
