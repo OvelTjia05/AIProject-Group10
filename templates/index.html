@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width-device-width, initial-scale=1.0" />
-    <title>Redstore | Ecommerce website</title>
+    <title>Adidas-Nike-Converse</title>
     <link
       rel="stylesheet"
       href="{{ url_for('static', filename='css/style.css') }}"
@@ -18,7 +18,7 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <title>Image Classification</title>
+    <!-- <title>Klasifikasi Sepatu Adidas, Nike, dan Converse</title> -->
   </head>
   <link rel="stylesheet" type="text/css" href="style.css" />
   <body>
@@ -39,11 +39,17 @@
         <!-- Clasication-->
         <div class="row">
           <div class="col-2">
-            <h1>Image Classification</h1>
+            <h1>Klasifikasi Sepatu Adidas, Nike, dan Converse</h1>
             <div class="row">
               <form method="POST" enctype="multipart/form-data" action="/">
-                <input type="file" name="file" accept="image/*" required />
-                <input type="submit" value="Upload" />
+                <input
+                  type="file"
+                  name="file"
+                  accept="image/*"
+                  class="btn"
+                  required
+                />
+                <input type="submit" value="Upload" class="btn" />
               </form>
               <div class="categories">
                 <div class="small-container">
